@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tugas Akhir </title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+</head>
+
+  <body>
+    <div class="navbar">
+        <div class="nav">
+            <div class="logo">
+                <img src="assets/img/logo.jpg" alt="" style="width: 100px; height: 90px;">
+            </div>
+            <a onclick="openPage('Home')">Home</a>
+            <a onclick="openPage('About')">About Us</a>
+            <a onclick="openPage('Services')">Services</a>
+            <a onclick="openPage('Location')">Location</a>
+            <div class="dropdown">
+                <button class="dropbtn">IKEA Food 
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <a onclick="openPage('menuutama')">Menu Utama</a>
+                <a onclick="openPage('sarapan')">Sarapan</a>  
+                <a onclick="openPage('makananpenutup')">Makanan Penutup</a>
+                </div>
+            </div>
+            <div class="user">
+              <a onclick="openPage('Biodata')">
+                <i class="fas fa-user"></i>
+              </a>
+            </div> 
+            <div class="cart">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div> 
+        </div>
+    </div>
+
+    <div class="resume-wrapper pages" id="Biodata" style="display: none;">
+      <section class="profile section-padding">
+        <div class="container">
+          <div class="picture-resume-wrapper">
+            <div class="picture-resume">
+              <span><img src="assets/img/biodata.jpeg" alt="" /></span>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="name-wrapper">
+            <h1>Yolanda <br/>Belva</h1>
+          </div>
+          <div class="clearfix"></div>
+          <div class="contact-info clearfix">
+            <ul class="list-titles">
+              <li>Call</li>
+              <li>Mail</li>
+              <li>Home</li>
+            </ul>
+            <ul class="list-content">
+              <li>+62 9656447292</li>
+              <li>belvayolanda22@gmail.com</li>
+              <li>Indonesia, Bandung</li>
+            </ul>
+          </div>
+          <div class="contact-presentation">
+            <p><span class="bold">Biodata</span><br>
+              Halo saya Yolanda Belva Daniswara, saya biasa dipanggil Yola, saya sekarang berumur 18 tahun.
+              Saya termasuk orang yang suka bersosialisasi dan berorganisasi, 
+              oleh karena itu, saya memiliki pengalaman dalam ber-organisasi,
+              seperti ORBIT (Organization of Basic Information Technology) Sebagai Wakil Ketua Umum.
+              Saya termasuk orang yang suka dengan pemrograman dan hal yang berhubungan dengan dunia IT.
+            </p>
+          </div>
+          <div class="contact-social clearfix">
+            <ul class="list-titles">
+              <li>Instagram</li>
+              <li>LinkedIn</li>
+            </ul>
+            <ul class="list-content">
+              <li><a href="https://www.instagram.com/xoyolaaax/">xoyolaaax</a></li>
+              <li><a href="https://www.linkedin.com/in/yolanda-belva-683b30219/">Yolanda Belva</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <section class="experience section-padding">
+        <div class="container">
+          <h3 class="experience-title">Experience</h3>
+          
+          <div class="experience-wrapper">
+            <div class="company-wrapper clearfix">
+              <div class="experience-title">CV. TORCHE INDONESIA</div>
+              <div class="time">November 2022 - Februari 2023</div>
+            </div>
+            
+            <div class="job-wrapper clearfix">
+              <div class="experience-title">Back End Developer </div>
+              <div class="company-description">
+                <p> - Menjadi BackEnd Developer <br>
+                    - DevOps ( Instalasi dan Maintenance Server )</p>
+              </div>
+            </div>
+            
+            <div class="company-wrapper clearfix">
+              <div class="experience-title">PT. REKAYASA PRIMA MANDIRI</div>
+              <div class="time">April 2022 - Juli 2022</div>
+            </div>
+            
+             <div class="job-wrapper clearfix">
+              <div class="experience-title">Web Developer</div>
+              <div class="company-description">
+                <p> - Membuat Game Acarde tembak menembak menggunakan C#
+                    - Membuat website Kantor menggunakan Laravel,Javascript,Jquery.</p>
+              </div>
+            </div>
+            
+            <div class="company-wrapper clearfix">
+              <div class="experience-title"> Kamp Kreatif Sekolah Indonesia (KKSI)</div>
+              <div class="time">2021</div>
+            </div> 
+            
+             <div class="job-wrapper clearfix">
+              <div class="experience-title"> </div>
+              <div class="company-description">
+                <p>Cabang Edugame (LockDown:End The Pandemic)</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-wrapper clearfix">
+            <h3 class="section-title">Skills</h3> 
+              <ul>
+                <li class="skill-percentage">HTML / HTML5</li>
+                <li class="skill-percentage">CSS / CSS3 / SASS / LESS</li>
+                <li class="skill-percentage">Javascript</li>
+                <li class="skill-percentage">PHP</li>
+                <li class="skill-percentage">SQL</li>
+                <li class="skill-percentage">Kubernetes</li>
+              </ul>
+          </div>
+        </div>
+      </section>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+
+
+
+    <main class="contents pages" id="menuutama" style="display: none;">
+      <div class="menu-container-utama">
+        <div class="menu-card-utama">
+          <img src="assets/img/salmon.jpeg" alt="" style="width: 300px;">
+          <h2>Salmon Panggang dengan Saus Creamy Garlic</h2>
+          <p><strong>Price:</strong> Rp 85.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/cordon.jpeg" alt="" style="width: 300px;">
+          <h2>Chicken Cordon Bleu</h2>
+          <p><strong>Price:</strong> Rp 50.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/meatballs.jpeg" alt="" style="width: 300px;">
+          <h2>Swedish meatballs (12pcs)</h2>
+          <p><strong>Price:</strong> Rp 60.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/plantballs.jpeg" alt="" style="width: 300px;">
+          <h2>Plant balls /12pcs</h2>
+          <p><strong>Price:</strong> Rp 60.000</p>
+          <p><strong>Note:</strong> Gravy and mashed potato contain animal-based ingredients.</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+
+      <div class="menu-container-utama">
+        <div class="menu-card-utama">
+          <img src="assets/img/curedsalmon.jpeg" alt="" style="width: 300px;">
+          <h2>Gravad lax cured salmon</h2>
+          <p><strong>Price:</strong> Rp 65.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/chicksalad.jpeg" alt="" style="width: 300px;">
+          <h2>Plant-based Chicken Salad</h2>
+          <p><strong>Price:</strong> Rp 30.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/ayam.jpeg" alt="" style="width: 300px;">
+          <h2>Ayam panggang Bali</h2>
+          <p><strong>Price:</strong> Rp 50.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/bolognese.jpeg" alt="" style="width: 300px;">
+          <h2>Pasta with plant-based beef bolognese</h2>
+          <p><strong>Price:</strong> Rp 35.000</p>
+          <p><strong>Note:</strong> Gravy and mashed potato contain animal-based ingredients.</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+    </main>
+
+    <main class="contents pages" id="sarapan" style="display: none;">
+      <div class="menu-container-utama">
+        <div class="menu-card-utama">
+          <img src="assets/img/nasgor.jpeg" alt="" style="width: 300px;">
+          <h2>Nasi Goreng oriental</h2>
+          <p><strong>Price:</strong> Rp 20.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/nasikuning.jpeg" alt="" style="width: 300px;">
+          <h2>Nasi Kuning</h2>
+          <p><strong>Price:</strong> Rp 20.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/nasiuduk.jpeg" alt="" style="width: 300px;">
+          <h2>Nasi Uduk</h2>
+          <p><strong>Price:</strong> Rp 20.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/miegoreng.jpeg" alt="" style="width: 300px;">
+          <h2>Mie Goreng</h2>
+          <p><strong>Price:</strong> Rp 60.000</p>
+          <p><strong>Note:</strong> Gravy and mashed potato contain animal-based ingredients.</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+    </main>
+
+    <main class="contents pages" id="makananpenutup" style="display: none;">
+      <div class="menu-container-utama">
+        <div class="menu-card-utama">
+          <img src="assets/img/sliced.jpeg" alt="" style="width: 300px;">
+          <h2>Almond Sliced Cake</h2>
+          <p><strong>Price:</strong> Rp 25.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/almond.jpeg" alt="" style="width: 300px;">
+          <h2>Chocolate Almond Caramel Cake</h2>
+          <p><strong>Price:</strong> Rp 30.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/mint.jpeg" alt="" style="width: 300px;">
+          <h2>Chocolate mint mud cake</h2>
+          <p><strong>Price:</strong> Rp 25.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/berry.jpeg" alt="" style="width: 300px;">
+          <h2>Mixed berry cheesecake</h2>
+          <p><strong>Price:</strong> Rp 30.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+
+      <div class="menu-container-utama">
+        <div class="menu-card-utama">
+          <img src="assets/img/moses.jpeg" alt="" style="width: 300px;">
+          <h2>Coklat mousse</h2>
+          <p><strong>Price:</strong> Rp 30.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/kueapel.jpeg" alt="" style="width: 300px;">
+          <h2>Kue Apel</h2>
+          <p><strong>Price:</strong> Rp 25.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/kuecoklat.jpeg" alt="" style="width: 300px;">
+          <h2>Kladdkaka Kue Coklat</h2>
+          <p><strong>Price:</strong> Rp 15.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+    
+        <div class="menu-card-image">
+          <img src="assets/img/kue.jpeg" alt="" style="width: 300px;">
+          <h2>Princess Cake</h2>
+          <p><strong>Price:</strong> Rp 18.000</p>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+    </main>
+
+  <main class="contents pages" id="Location" style="display: none;">
+    <div class="lokasi-container">
+        <div class="lokasi">
+            <img src="assets/img/alamsutera.jpeg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>IKEA Alam Sutera</b></h4> <a target="_blank" href="https://www.google.com/maps/dir//ikea+alam+sutera/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x2e69f962e74a18f5:0xdb2888507e578fb2?sa=X&ved=2ahUKEwjuuIy40YmEAxXiimMGHTaUAZwQ9Rd6BAhkEAA"><i class="fas fa-map-marked-alt"></i></a></i>
+                <p>Ayo makan di restoran dan bistro kami.</p>
+                <p><b>Jam operasional:</b> 10.00 - 22.00 WIB</p>
+            </div>
+        </div>
+        <div class="lokasi">
+            <img src="assets/img/ikeasentul.jpeg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>IKEA Sentul</b></h4><a target="_blank" href="https://www.google.com/maps/dir/-6.9161237,107.6570478/ikea+sentul/@-6.5803273,106.5913037,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69c73d34264871:0xb16ab9324c760891!2m2!1d106.854993!2d-6.5674605?entry=ttu"><i class="fas fa-map-marked-alt"></i></a>
+                <p>Ayo makan di restoran dan bistro kami.</p>
+                <p><b>Jam operasional:</b> 10.00 - 21.00 WIB</p>
+            </div>
+        </div>
+        <div class="lokasi">
+            <img src="assets/img/Ikeabali.jpeg" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>IKEA Bali</b></h4><a target="_blank" href="https://www.google.com/maps/dir//Jl.+Patih+Jelantik,+Ruko+Central+Kuta+No.137+Kompleks+Istana+Kuta+Galleria,+Kuta+Central+Park,+Kec.+Kuta,+Bali+80361/@-8.7121893,115.0980976,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd2470e500445c1:0x1f61973847d5ea0b!2m2!1d115.1804995!2d-8.7121982?entry=ttu"><i class="fas fa-map-marked-alt"></i></a>
+                <p>Ayo makan di restoran dan bistro kami.</p>
+                <p><b>Jam operasional:</b> 10.00 - 22.00 WITA</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="lokasi-container">
+      <div class="lokasi">
+          <img src="assets/img/jakarta.jpeg" alt="Avatar" style="width:100%">
+          <div class="container">
+              <h4><b>IKEA Jakarta Garden City</b></h4><a target="_blank" href="https://www.google.com/maps?sca_esv=40208b2a209bf428&rlz=1C1ONGR_enID1008ID1008&sxsrf=ACQVn09TkN4En4XxFJG9Jtb_f_82MZocqQ:1706773250488&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2lrZWEgZ2FyZGVuKgIIADILEC4YrwEYxwEYgAQyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyGhAuGK8BGMcBGIAEGJcFGNwEGN4EGOAE2AECSJkSUMAFWOcJcAJ4AZABAJgBeKAB8wSqAQMxLjW4AQPIAQD4AQHCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA8ICGRAuGIAEGIoFGEMYxwEY0QMYyAMYsAPYAQHCAhkQLhiABBiKBRhDGMcBGK8BGMgDGLAD2AEBwgIcEC4YgAQYigUYQxjHARivARjIAxiwAxiOBdgBAcICGRAuGEMYrwEYxwEYgAQYigUYyAMYsAPYAQHCAgUQABiABMICCxAuGIAEGMcBGK8BwgIOEC4YgAQYywEYxwEY0QPCAgoQABiABBjLARgK4gMEGAAgQYgGAZAGFLoGBggBEAEYCLoGBggCEAEYFA&um=1&ie=UTF-8&fb=1&gl=id&sa=X&geocode=KQ9H44lFi2kuMaNrYw_30WUb&daddr=Jl.+Jkt+Garden+City+Boulevard+No.176,+RT.7/RW.14,+Cakung+Tim.,+Kec.+Cakung,+Kota+Jakarta+Timur,+Daerah+Khusus+Ibukota+Jakarta+13910"><i class="fas fa-map-marked-alt"></i></a>
+              <p>Ayo makan di restoran dan bistro kami.</p>
+              <p><b>Jam operasional:</b></p>
+              <p>Senin – Jumat: 12.00 - 21.00 WIB</p>
+              <p>Sabtu, Minggu & Libur nasional: 10.00 - 22.00 WIB</p>
+          </div>
+      </div>
+      <div class="lokasi">
+          <img src="assets/img/parahyangan.jpeg" alt="Avatar" style="width:100%">
+          <div class="container">
+              <h4><b>IKEA Kota Baru Parahyangan</b></h4><a target="_blank" href="https://www.google.com/maps?sca_esv=40208b2a209bf428&rlz=1C1ONGR_enID1008ID1008&sxsrf=ACQVn098csrAi-147zxhyXI4TsS4ZIe4Hw:1706773277947&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiGmlrZWEga290YSBiYXJ1IHBhcmFoeWFuZ2FuMgsQLhivARjHARiABDIFEAAYgAQyCBAAGIAEGMsBMgUQABiABDIIEAAYgAQYywEyBRAAGIAEMggQABiABBjLATIaEC4YrwEYxwEYgAQYlwUY3AQY3gQY4ATYAQNI4iRQtwlY9CNwA3gBkAEAmAF9oAH9CqoBAzcuN7gBA8gBAPgBAcICChAAGEcY1gQYsAPCAg0QABiABBiKBRhDGLADwgIOEAAY5AIY1gQYsAPYAQHCAhkQLhiABBiKBRhDGMcBGK8BGMgDGLAD2AECwgIZEC4YgAQYigUYQxjHARjRAxjIAxiwA9gBAsICGRAuGEMYrwEYxwEYgAQYigUYyAMYsAPYAQLCAggQABiABBixA8ICEBAuGK8BGMcBGIAEGIoFGCfCAgoQIxiABBiKBRgnwgIQEC4YgAQYigUYxwEYrwEYJ8ICDhAuGK8BGMcBGLEDGIAEwgIdEC4YrwEYxwEYgAQYigUYlwUY3AQY3gQY4ATYAQPCAgsQLhiABBjHARivAcICBxAAGIAEGArCAgIQJsICBhAAGBYYHuIDBBgAIEGIBgGQBhC6BgYIARABGAm6BgYIAhABGAi6BgYIAxABGBQ&um=1&ie=UTF-8&fb=1&gl=id&sa=X&geocode=KS_kIJGc-2guMebaJHThLyUo&daddr=Jl.+Parahyangan+Raya+No.9,+Cipeundeuy,+Kec.+Padalarang,+Kabupaten+Bandung+Barat,+Jawa+Barat+40553"><i class="fas fa-map-marked-alt"></i></a>
+              <p>Ayo makan di restoran dan bistro kami.</p>
+              <p><b>Jam operasional:</b></p>
+              <p>Senin – Jumat: 10.00 - 21.00 WIB</p>
+              <p>Sabtu, Minggu & Libur nasional: 09.00 - 21.00 WIB</p>
+          </div>
+      </div>
+      <div class="lokasi">
+          <img src="assets/img/taman-anggrek.jpeg" alt="Avatar" style="width:100%">
+          <div class="container">
+              <h4><b>IKEA Mal Taman Anggrek</b></h4><a target="_blank" href="https://www.google.com/maps/dir/-6.9161237,107.6570478/ikea+kota+taman+anggrek/@-6.5469136,106.5653532,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69f727f19d6c09:0xf5f7879606e491f2!2m2!1d106.7928129!2d-6.1786614?entry=ttu"><i class="fas fa-map-marked-alt"></i></a>
+              <p>Ayo makan di restoran dan bistro kami.</p>
+              <p><b>Jam operasional:</b> 10.00 - 22.00 WIB</p>
+          </div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="lokasi-container">
+      <div class="lokasi">
+        <img src="assets/img/surabaya.jpeg" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b>IKEA Ciputra World Surabaya</b></h4><a target="_blank" href="https://www.google.com/maps/dir//Jl.+Mayjen+Sungkono+No.89,+Gn.+Sari,+Kec.+Dukuhpakis,+Surabaya,+Jawa+Timur+60224/@-7.2927973,112.636986,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x2dd7fbe79285391f:0x799c1404f8b77519!2m2!1d112.7193879!2d-7.2928048?entry=ttu"><i class="fas fa-map-marked-alt"></i></a>
+            <p>Ayo makan di restoran dan bistro kami.</p>
+            <p><b>Jam operasional:</b> 10.00 - 22.00 WIB</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <div id="Home" class="pages">
+    <div class="container" id="Home">
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="assets/img/banner_img_03.jpg" style="width:70%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="assets/img/banner_img_02.jpg" style="width:70%">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="assets/img/banner_img_01.jpg" style="width:70%">
+        </div> 
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div class="card-container " id="Home">
+        <div class="card">
+          <img src="assets/img/HAVSTA.jpeg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>HAVSTA</b></h4> 
+            <p>Cabinet with plinth, white, 81x47x89 cm</p> 
+            <p>Rp 3.900.000</p>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="assets/img/malm.jpeg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>MALM</b></h4> 
+            <p>Desk, white, 140x65 cm</p> 
+            <p>Rp 2.499.000</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/img/Polytron.jpeg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Polytron</b></h4> 
+            <p>Polytron mini fridge prh 51x</p> 
+            <p>Rp 1.459.000</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="assets/img/FAMNIG-HJÄRTA.jpeg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>FAMNIG HJÄRTA</b></h4> 
+            <p>Cushion, red, 40x101 cm</p> 
+            <p>Rp 69.900</p>
+          </div>
+        </div>
+
+        <div class="card">
+            <img src="assets/img/STYRSPEL.jpeg" alt="Avatar" style="width:100%;">
+            <div class="container">
+              <h4><b>STYRSPEL/FREDDE</b></h4> 
+              <p>Gaming desk and chair, black/purple</p>
+              <p>Rp 9.598.000</p> 
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/GLADHOJDEN.jpeg" alt="Avatar" style="width:100%;">
+            <div class="container">
+              <h4><b>GLADHÖJDEN</b></h4> 
+              <p>Desk sit/stand, white, 100x60 cm</p>
+              <p>Rp 3.999.000</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="assets/img/lampu.jpeg" alt="Avatar" style="width:100%;">
+            <div class="container">
+              <h4><b>NYMÅNE</b></h4> 
+              <p>Floor/reading lamp, white</p> 
+              <p>Rp 999.000</p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <main class="contents pages" id="About" style="display: none;">
+        <div class="row">
+            <div class="content-wrapper">
+                <h1>About Us</h1>
+                <p> What started as a tiny mail order company in rural Sweden has now become a global home furnishing brand that brings affordability, design and comfort to people all over the world. 
+                    We may have come a long way since our humble beginnings, but our vision remains the same: to create a better everyday life for the many people. 
+                    Here you can explore the IKEA story and learn more about our heritage and the events that shaped us.
+                </p>
+                <a onclick="openPage('menuutama')" class="btn">BELANJA SEKARANG</a>
+            </div>
+
+            <div class="content-wrapper">
+                <img src="assets/img/Problem solving-cuate.png" alt="" srcset="">
+            </div>
+
+        </div>
+    </main>
+
+      <div class="Services pages" id="Services" style="display: none;">
+        <div class="conSer" id="conSer">
+          <div class="card border-top-yellow">
+            <div class="front">
+              <i class="fas fa-shipping-fast"></i>
+              <h2>Delivery Services</h2>
+            </div>
+          </div>
+          <div class="card border-top-green">
+            <div class="front">
+              <i class="fas fa-exchange-alt"></i>
+              <h2>Shipping & Return</h2>
+            </div>
+          </div>
+          <div class="card border-top-blue">
+            <div class="front">
+              <i class="fa fa-percent"></i>
+              <h2>Promotion</h2>
+            </div>
+          </div>
+        </div>
+
+    <div class="container my-4" id="partner">
+      <div class="col-lg-6 m-auto" id="partner-info">
+        <h1 class="h1">Our Partnership</h1>
+        <p> 
+          We build long-term, strategic partnerships with both large and small organisations. Together with our partners, 
+          we develop innovative solutions and work to change complex systems, so they benefit the many people and protect our planet.
+        </p>
+      </div>
+        <div class="row text-center py-3">
+            <div class="col-lg-9 m-auto tempaltemo-carousel">
+                <div class="carousel" id="templatemo-slide-brand">
+                    <div class="product-links-wap">
+                        <a class="brand-link" href="https://a2ei.org/">             <img class="img-fluid brand-img" src="assets/img/A2EI.jpeg" alt="Brand Logo"></a>
+                        <a class="brand-link" href="https://www.biovision.ch/">     <img class="img-fluid brand-img" src="assets/img/BOV.jpeg" alt="Brand Logo"></a>
+                        <a class="brand-link" href="https://www.cleanairfund.org/"> <img class="img-fluid brand-img" src="assets/img/CAF.jpeg" alt="Brand Logo"></a>
+                        <a class="brand-link" href="https://noharm.org/">           <img class="img-fluid brand-img" src="assets/img/HCWH.jpeg" alt="Brand Logo"></a>
+                        <a class="brand-link" href="https://www.purpose-us.com/">   <img class="img-fluid brand-img" src="assets/img/P.jpeg" alt="Brand Logo"></a>
+                        <a class="brand-link" href="https://globaldevincubator.org/"><img class="img-fluid brand-img" src="assets/img/GDI.jpeg" alt="Brand Logo"></a>
+                        <a class="brand-link" href="https://goingtoschool.com/">    <img class="img-fluid brand-img" src="assets/img/GTS.jpeg" alt="Brand Logo"></a>
+                        <a class="brand-link" href="https://www.neareast.org/">     <img class="img-fluid brand-img" src="assets/img/NEF.jpeg" alt="Brand Logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            openPage("Home"); // Show the Home page by default
+        });
+
+        function openPage(pageId) {
+    var i;
+    var x = document.getElementsByClassName("pages");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(pageId).style.display = "block";
+}
+        </script>
+  </body>
+</html>
